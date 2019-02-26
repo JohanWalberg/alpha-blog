@@ -1,2 +1,72 @@
+$navbar-default-bg: #FD4679 ;
+
+//#08088A <= Old BG color navbar
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// Css for logo
+#logo {
+  float:left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+// Center
+.center {
+  text-align: center;
+}
+
+// Jumbotron CSS/ Background image
+.jumbotron {
+  background-image: asset-url('banner-tall-pink.jpg');
+  background-size: cover;
+  // height: 550pt;
+  height: 300pt;
+  margin-top: -20pt;
+}
+.jumbotron h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30pt;
+  letter-spacing: -1pt;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  background-color: #000;
+}
+
+// Footer
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222
+}
+
+footer small {
+  float: left;
+}
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
