@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
 before_action :set_user, only: [:edit, :update, :show]
+before_action :require_same_user, only: [:edit, :update]
 
 
 def index
@@ -45,6 +46,12 @@ def user_params
 end
 def set_user
    @user = User.find(params[:id])
+end
+def require_same_user
+  if current_user != @user
+    flash[:danger] = "you can only edit you own account"
+    redirect_to root_path
+  end
 end
 
 end
