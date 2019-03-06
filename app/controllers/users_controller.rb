@@ -49,7 +49,7 @@ def set_user
 end
 def require_same_user
   if current_user != @user
-    flash[:danger] = "you can only edit you own account"
+    flash[:danger] = "You can only edit you own account"
     redirect_to root_path
   end
 end
